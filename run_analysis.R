@@ -45,5 +45,5 @@ colnames(data) <- gsub("\\()","",names(data))
 colnames(data) <- gsub(" ","",names(data))  ## removing things from column names
 
 ## Step 5
-tidy_data <- group_by(data, activity)
-new_dataset <- summarize_all(tidy_data,list(mean))
+tidy_data <- group_by(data, activity)       ## grouping of dataset by activity
+new_dataset <- summarize_all(tidy_data,list(mean))  ##summarizing the data set
